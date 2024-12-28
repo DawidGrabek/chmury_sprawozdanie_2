@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-              app: app-b-service
+        app: app-b-service
     spec:
       containers:
       - name: app-b
