@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-a-ingress
+  namespace: appns-a
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: a.lab9.net
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: app-a-service
+            port:
+              number: 80
+
