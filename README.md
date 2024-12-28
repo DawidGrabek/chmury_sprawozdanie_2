@@ -51,7 +51,7 @@
 
 2.  **Utworzenie serwisów:**
 
-    - Zastosowano `services-a-b.yaml`:
+    - Zastosowano `services-a-b.yaml`, w `default-backend.yaml` znajduje się też serwis dla backend'u:
 
       ```bash
       kubectl apply -f services-a-b.yaml
